@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+    <title>Jazz Patterson</title>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+</head>
+<body>
+    <div id="grid">
+        <div style="display: flex;
+        flex-direction: column;
+        position: relative;" id="home-div">
+            <svg id="menu-icon" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"></path> </svg>
+            <!--<div id="actor" class="div-text">Actor</div>-->
+            <div id="photographer" class="div-text">Photographer</div>
+            <img id="jazz-photo" src="images/jazz.PNG" alt="">
+        </div>
+        <nav id ="nav" class="hide">
+            <svg width="40" height="40" id="x" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M13.854 2.146a.5.5 0 0 1 0 .708l-11 11a.5.5 0 0 1-.708-.708l11-11a.5.5 0 0 1 .708 0Z"/> <path fill-rule="evenodd" d="M2.146 2.146a.5.5 0 0 0 0 .708l11 11a.5.5 0 0 0 .708-.708l-11-11a.5.5 0 0 0-.708 0Z"/> </svg>
+            <a class="nav-links" href="#about-me-content-box">About Me</a>
+            <a class="nav-links" href="#gallery">Portfolio</a>
+            <a class="nav-links" href="#form-container">Contact  Me</a>
+            <a class="nav-links" href="#testimonials">Testimonials</a>
+        </nav>
+        <img id="about-img" src="images/JAZ_7268.JPG" alt="image">
+        <div id="about-me-content-box">
+                <h1 id="h-one">Who am I? </h1>
+                <p id="about-me-p" class="l-hide" style=" line-height: 2; margin: 3% 3% 5% 3%;">My name is Jazz Patterson, and I am a photographer based in South Florida. I’m quite a proponent of the arts in general. Aside from being a photographer, I’m also a stage and screen actor, writer, filmmaker, and tennis athlete. My passion is telling stories in new ways and about new things. Each new person I get to work, I take as an opportunity to learn and make a new experience. It’s my pleasure to work with you and create the high quality images you deserve.</p>
+                <svg id="cam-svg" width="7%" height="7%" viewBox="0 0 16 16"> <path d="M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1v6zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2z"/> <path d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5zm0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zM3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"/> </svg>
+        </div>
+        <div id="gallery">
+            <div class="gallery-div">
+                <img class="r-hide" src="images/JAZ_5760-2.JPG" alt="jazz photography img">
+                <img class="r-hide" src="images/JAZ_3548.jpg" alt="jazz photography img">
+                <img class="r-hide" src="images/JAZ_3175.JPG" alt="jazz photography img">
+                <img class="r-hide" src="images/JAZ_4879-2.JPG" alt="jazz photography img">
+            </div>
+            <div class="gallery-div">
+                <img class="l-hide" src="images/JAZ_4118.JPG" alt="jazz photography img">
+                <img class="l-hide" src="images/JAZ_3803-2.JPG" alt="jazz photography img">
+                <img class="l-hide" src="images/JAZ_6191-2.JPG" alt="jazz photography img" >
+                <img class="l-hide" src="images/JAZ_1645-2.JPG" alt="jazz photography img">
+            </div>
+        </div>
+        <div id="form-container" style="padding-top: 100px;">
+            <h1 style="border-top: solid 1px white; padding-top: 20px;" >Book an Appointment</h1>
+            <form method="POST">
+                    <input type="text" id="name" name="name" placeholder="Name">
+                    <input type="email" id="email" name="email" placeholder="Email">
+                    <input type="text" id="number" name="number" placeholder="Phone Number">
+              <textarea id="subject" name="subject" placeholder="Ask a question or message me.." style="height:200px"></textarea>
+          
+              <input id="submit" type="submit" value="Send">
+          
+            </form>
+          </div>
+          <div id="testimonials" class="testimonials">
+           <!--<h1>Testmonials</h1>-->
+           <div style=" margin: 10px; width: 100%;
+           height: 100%; display: flex;
+           flex-direction: column;
+           align-items: center; justify-content: center;">
+            <div class="overflow-wrapper">
+                <div class="border-glow"></div>
+                <div class="statement-box">
+                    <div style="background-color: rgb(189, 124, 3);" class="icon" >J</div>
+                    <h1 style="color:rgb(235, 173, 58)">Jayla</h1>
+                    <p class="p-graph-observer">“Taking headshots with Jazz Patterson was by far a wonderful experience. He managed to find amazing backdrops and locations. When something wasn’t working, he was quick to find outstanding solutions.
+
+                        The process was about 2 hours long, and resulted in a multitude of useful pieces (some of which helped me land incredible theatrical opportunities). I highly recommend his work to any upcoming performers in need of some new headshots! I promise your photos will end up looking flawless like mine were.”
+                        </p>
+                </div>
+            </div>
+          </div>
+          <div style=" margin: 10px; width: 100%;
+          height: 100%; display: flex;
+          flex-direction: column;
+          align-items: center; justify-content: center;">
+           <div class="overflow-wrapper">
+               <div class="border-glow"></div>
+               <div class="statement-box">
+                   <div style="background-color: rgb(149, 13, 147);" class="icon" >S</div>
+                   <h1 style="color:rgb(221, 81, 218)">Shireen</h1>
+                   <p class="p-graph-observer">Jazz was excellent. As a photographer, he made everyone feel relaxed and left a positive impression on those he interfaced with at the symposium. He has a passion for the job and that makes him an incredible person to work with.</p>
+               </div>
+           </div>
+         </div>
+           </div>
+          
+        <!--
+        <div id="gallery">
+            <div class="gallery-div">
+                <img src="images/JAZ_5760-2.JPG" alt="jazz photography img">
+                <img src="images/JAZ_3548.jpg" alt="jazz photography img">
+            </div>
+            <div class="gallery-div">
+                <img src="images/JAZ_3175.JPG" alt="jazz photography img">
+                <img id="height100" src="images/JAZ_4879-2.JPG" alt="jazz photography img">
+            </div>
+            <div class="gallery-div">
+                <img id="height101" src="images/JAZ_4118.JPG" alt="jazz photography img">
+                <img src="images/JAZ_3803-2.JPG" alt="jazz photography img">
+            </div>
+            <div class="gallery-div">
+                <img src="images/JAZ_6191-2.JPG" alt="jazz photography img" >
+                <img id="height102" src="images/JAZ_1645-2.JPG" alt="jazz photography img">
+            </div>
+        </div>
+    -->
+    </div>
+    <footer>
+        <a class="footer-links icon-animation-1" href="https://instagram.com/viewtiful.jazz?igshid=YmMyMTA2M2Y="><svg class="footer-icons" viewBox="0 0 448 512" fill="currentColor"><path d="M224,202.66A53.34,53.34,0,1,0,277.36,256,53.38,53.38,0,0,0,224,202.66Zm124.71-41a54,54,0,0,0-30.41-30.41c-21-8.29-71-6.43-94.3-6.43s-73.25-1.93-94.31,6.43a54,54,0,0,0-30.41,30.41c-8.28,21-6.43,71.05-6.43,94.33S91,329.26,99.32,350.33a54,54,0,0,0,30.41,30.41c21,8.29,71,6.43,94.31,6.43s73.24,1.93,94.3-6.43a54,54,0,0,0,30.41-30.41c8.35-21,6.43-71.05,6.43-94.33S357.1,182.74,348.75,161.67ZM224,338a82,82,0,1,1,82-82A81.9,81.9,0,0,1,224,338Zm85.38-148.3a19.14,19.14,0,1,1,19.13-19.14A19.1,19.1,0,0,1,309.42,189.74ZM400,32H48A48,48,0,0,0,0,80V432a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V80A48,48,0,0,0,400,32ZM382.88,322c-1.29,25.63-7.14,48.34-25.85,67s-41.4,24.63-67,25.85c-26.41,1.49-105.59,1.49-132,0-25.63-1.29-48.26-7.15-67-25.85s-24.63-41.42-25.85-67c-1.49-26.42-1.49-105.61,0-132,1.29-25.63,7.07-48.34,25.85-67s41.47-24.56,67-25.78c26.41-1.49,105.59-1.49,132,0,25.63,1.29,48.33,7.15,67,25.85s24.63,41.42,25.85,67.05C384.37,216.44,384.37,295.56,382.88,322Z"/></svg></a>
+        <!--
+        <a class="footer-links icon-animation-2" href="#"><svg class="footer-icons" viewBox="0 0 16 16" fill="currentColor"> <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/> </svg></a>-->
+    </footer>
+    <script>
+        const submit = document.getElementById('submit');
+        submit.addEventListener('click', (e)=>{
+            e.preventDefault();
+            let Name = document.getElementById('name').value;
+            let email = document.getElementById('email').value;
+            let number = document.getElementById('number').value;
+            let textBox = document.getElementById('subject').value;
+        
+            let message = "Phone Number: " + number + "\n" + textBox;
+            sendEmail(email, Name, message)
+        })
+        function sendEmail(email, name, message){
+            Email.send({
+                Host : "smtp.elasticemail.com",
+                Username : "jazzpattersonn@gmail.com",
+                Password : "EFF48F6524289C13069A1722A91F6941DDA6",
+                To : 'jazzpattersonn@gmail.com',
+                From : 'jazzpattersonn@gmail.com',
+                Subject : "This is a new Message from " + name,
+                Body : message,
+            }).then(
+              message => alert(message)
+            );
+        }
+        </script>
+    <script src="script.js"></script>
+</body>
+</html>
