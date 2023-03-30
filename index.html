@@ -130,7 +130,7 @@
             let number = document.getElementById('number').value;
             let textBox = document.getElementById('subject').value;
         
-            let message = "Phone Number: " + number + "\n" + textBox;
+            let message = "Phone Number: " + number + "\n" +"Email: " + email + "\n" + "message: " + textBox;
             sendEmail(email, Name, message)
         })
         function sendEmail(email, name, message){
