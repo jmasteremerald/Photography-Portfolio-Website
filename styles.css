@@ -136,10 +136,10 @@ nav{
     font-size: 2rem;
     color: white;
 }
-/*#actor{
+#actor{
     left: 10%;
     animation: fade-down 1s backwards ease-in;
-}*/
+}
 #photographer{
     right: 10%;
     animation: fade-down 1s backwards ease-in;
