@@ -59,8 +59,10 @@
               <textarea id="subject" name="subject" placeholder="Ask a question or message me.." style="height:200px"></textarea>
           
               <input id="submit" type="submit" value="Send">
-          
             </form>
+            <div id="modal" class="modal-hide">
+                <h2 id="modalH2"> Thank you!! <br> Your message was sent</h2>
+            </div>
           </div>
           <div id="testimonials" class="testimonials">
            <!--<h1>Testmonials</h1>-->
@@ -74,7 +76,6 @@
                     <div style="background-color: rgb(189, 124, 3);" class="icon" >J</div>
                     <h1 style="color:rgb(235, 173, 58)">Jayla</h1>
                     <p class="p-graph-observer">“Taking headshots with Jazz Patterson was by far a wonderful experience. He managed to find amazing backdrops and locations. When something wasn’t working, he was quick to find outstanding solutions.
-
                         The process was about 2 hours long, and resulted in a multitude of useful pieces (some of which helped me land incredible theatrical opportunities). I highly recommend his work to any upcoming performers in need of some new headshots! I promise your photos will end up looking flawless like mine were.”
                         </p>
                 </div>
@@ -94,7 +95,6 @@
            </div>
          </div>
            </div>
-          
         <!--
         <div id="gallery">
             <div class="gallery-div">
@@ -129,7 +129,6 @@
             let email = document.getElementById('email').value;
             let number = document.getElementById('number').value;
             let textBox = document.getElementById('subject').value;
-        
             let message = "Phone Number: " + number + "\n" +"Email: " + email + "\n" + "message: " + textBox;
             sendEmail(email, Name, message)
         })
@@ -143,8 +142,19 @@
                 Subject : "This is a new Message from " + name,
                 Body : message,
             }).then(
-              message => alert(message)
+            (message) =>{
+                if(message == "OK"){
+                    const modal = document.getElementById('modal');
+                    modal.classList.remove('modal-hide');
+                    modal.classList.add('modal');
+                }
+                else{
+                    alert(message);
+                }
+            }
             );
+            modal.classList.add('modal-hide');
+            modal.classList.remove('modal');
         }
         </script>
     <script src="script.js"></script>
