@@ -57,12 +57,12 @@
                     <input type="email" id="email" name="email" placeholder="Email">
                     <input type="text" id="number" name="number" placeholder="Phone Number">
               <textarea id="subject" name="subject" placeholder="Ask a question or message me.." style="height:200px"></textarea>
-          
+              <!-- submit button-->
               <input id="submit" type="submit" value="Send">
-            </form>
-            <div id="modal" class="modal-hide">
+              <div id="modal" class="modal-hide">
                 <h2 id="modalH2"> Thank you!! <br> Your message was sent</h2>
             </div>
+            </form>
           </div>
           <div id="testimonials" class="testimonials">
            <!--<h1>Testmonials</h1>-->
@@ -131,6 +131,7 @@
             let textBox = document.getElementById('subject').value;
             let message = "Phone Number: " + number + "\n" +"Email: " + email + "\n" + "message: " + textBox;
             sendEmail(email, Name, message)
+            resetValues(document.getElementById('name'), document.getElementById('email'), document.getElementById('number'), document.getElementById('subject'))
         })
         function sendEmail(email, name, message){
             Email.send({
@@ -155,6 +156,12 @@
             );
             modal.classList.add('modal-hide');
             modal.classList.remove('modal');
+        }
+        function resetValues(name, email, number, textbox){
+            name.value = "";
+            email.value = "";
+            number.value = "";
+            textbox.value = "";
         }
         </script>
     <script src="script.js"></script>
